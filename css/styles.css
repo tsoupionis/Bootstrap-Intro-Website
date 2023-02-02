@@ -9,7 +9,7 @@ body {
 }
 
 .container-fluid{
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 h1 {
@@ -21,6 +21,7 @@ h1 {
 h2 {
     font-weight: 900;
     line-height: 1.5;
+    font-size: 2.5rem;
 }
 
 h3 {
@@ -63,14 +64,20 @@ p {
 /* Title Image */
 
 .title-image {
-    width: 60%;
+    width: 15%;
     transform: rotate(25deg);
+    position: absolute; 
+    right: 22%;
 }
 
 /* Features */
 
 #features {
    padding: 7% 15%;
+   background-color: #fff;
+   position: relative;
+   /* we don't need z-index to specify this goes in front of the image because it comes after it
+   in the html index file */
 }
 
 .feature-box {
@@ -114,4 +121,27 @@ p {
 .press-logo {
     width: 15%;
     margin: 20px 20px 50px;
+}
+
+/* Pricing */
+
+#pricing {
+    padding: 100px;
+}
+
+.pricing-column {
+    padding: 3% 2%;
+}
+
+@media (max-width: 1007px) {
+
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+        width: 50%;
+        transform: rotate(0);
+    }
 }
