@@ -4,7 +4,7 @@ body {
     text-align: center;
 }
 
-h1 , h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
 }
 
@@ -31,15 +31,16 @@ p {
     padding: 7% 15%;
 }
 
-/* Title Section */
+/* Sections */
 
-#title {
+.colored-section {
     background-color: #ff4c68;
     color :#fff;
-    text-align: left;
 }
 
-
+.white-section {
+    background-color: #fff;
+}
 
 /* Navigation Bar */
 
@@ -62,14 +63,19 @@ p {
     font-weight: 100;
 }
 
-/* Buttons */
+/* Download Buttons */
 
 .download-button {
     margin : 5% 3% 5% 0;
     font-weight: 900;
 }
 
-/* Title Image */
+/* Title Section */
+
+#title .container-fluid {
+    padding: 3% 15% 7%;
+    text-align: left;
+}
 
 .title-image {
     width: 15%;
@@ -81,7 +87,6 @@ p {
 /* Features */
 
 #features {
-   background-color: #fff;
    position: relative;
    /* we don't need z-index to specify this goes in front of the image because it comes after it
    in the html index file */
@@ -108,7 +113,6 @@ p {
 
 #testimonials {
     background-color: #ef8172;
-    color: #fff;
 }
 
 .testimonial-text {
@@ -149,15 +153,6 @@ p {
 
 /* Footer */
 
-#cta {
-    background-color: #ff4c68;
-    color: #fff;
-}
-
-#footer {
-    color: #fff;
-}
-
 .download-button-footer {
     margin : 2% 3% 5% 0;
 }
@@ -168,7 +163,7 @@ p {
 
 @media (max-width: 1007px) {
 
-    #title {
+    #title .container-fluid {
         text-align: center;
     }
 
